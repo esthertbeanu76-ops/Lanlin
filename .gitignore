@@ -1,0 +1,12 @@
+# Keep generated deployment assets, but avoid committing the original heavy media library by accident.
+01_AI影视短剧成片/
+02_角色IP与分镜/
+03_电商视觉与产品视频/
+04_Logo与品牌设计/
+05_漫画卡片与角色海报/
+06_建筑空镜与环境素材/
+
+# Local/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
