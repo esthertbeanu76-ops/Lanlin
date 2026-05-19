@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Lanlin - AIGC视觉设计师作品集，聚焦AI视频全流程、提示词工程、分镜可视化、角色与场景生成。"
+      content="Lanlin - AIGC视觉设计师作品集，展示AI短剧成片、角色IP设定、分镜可视化、电商视觉、Logo与漫画海报等作品。"
     />
-    <title>Lanlin | AIGC视觉设计师</title>
+    <title>Lanlin | AIGC视觉设计师作品集</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <canvas class="ambient-canvas" aria-hidden="true"></canvas>
     <div class="cursor-brush" aria-hidden="true"></div>
+
     <header class="site-header" aria-label="主导航">
       <a class="brand" href="#top" aria-label="Lanlin home">
         <span class="brand-mark">L</span>
@@ -20,8 +21,8 @@
       </a>
       <nav class="nav-links" aria-label="页面导航">
         <a href="#work">作品</a>
-        <a href="#skills">技能</a>
-        <a href="#about">关于</a>
+        <a href="#gallery">图库</a>
+        <a href="#skills">能力</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
@@ -38,29 +39,26 @@
           playsinline
         ></video>
         <div class="hero-overlay"></div>
-        <div class="hero-texture" aria-hidden="true"></div>
         <div class="hero-inner">
           <div class="hero-copy-block" data-depth="0.035">
             <p class="eyebrow">AIGC VISUAL DESIGNER</p>
             <h1 id="hero-title">Lanlin</h1>
             <p class="hero-role">AIGC视觉设计师</p>
             <p class="hero-copy">
-              擅长从创意、剧本、角色设定、场景生成、分镜到剪辑配音的 AI
-              视频全流程制作。
+              从创意、剧本、角色、场景、分镜到成片交付，完成AI视频全流程视觉制作。
             </p>
             <p class="hero-copy hero-copy-en">
-              AI video production from concept and storyboards to character,
-              scene, edit and final delivery.
+              AI video production from concept and storyboard to characters, scenes, editing and final delivery.
             </p>
-            <div class="hero-actions" aria-label="联系方式">
-              <a class="button primary" href="mailto:Lanlin@163.com">邮箱联系</a>
-              <a class="button secondary" href="tel:15505088003">电话联系</a>
+            <div class="hero-actions" aria-label="联系与作品入口">
+              <a class="button primary" href="#work">查看完整作品</a>
+              <a class="button secondary" href="mailto:Lanlin@163.com">邮箱联系</a>
             </div>
           </div>
-          <aside class="hero-panel paper-note" data-depth="-0.03" aria-label="创作能力摘要">
-            <span class="panel-label">Current Focus</span>
-            <strong>AIGC Video Pipeline</strong>
-            <p>Script insight / Character design / Storyboard / AI footage / Edit</p>
+          <aside class="hero-panel paper-note" data-depth="-0.03" aria-label="作品集重点">
+            <span class="panel-label">Portfolio Focus</span>
+            <strong>完整成片 + 角色设定 + 分镜落地</strong>
+            <p>Full episodes / Character IP / Storyboard / Commercial visuals</p>
             <div class="sketch-bars" aria-hidden="true">
               <span></span><span></span><span></span><span></span>
             </div>
@@ -71,42 +69,70 @@
       <section class="intro section" aria-labelledby="intro-title">
         <div class="section-heading">
           <p class="eyebrow">PROFILE</p>
-          <h2 id="intro-title">把 AIGC 变成可落地的视觉成片</h2>
+          <h2 id="intro-title">把AIGC从画面探索推进到可观看成片</h2>
         </div>
         <div class="intro-grid">
           <p>
-            本科主修视觉传达设计，经历过空间效果图制作、写真与婚礼摄影，
-            现在专注 AIGC 视频设计。工作中会和编剧沟通剧本内核，建立角色人设与故事走向，
-            再通过 AI 工具完成角色、场景、分镜、视频素材、剪辑与配音整合。
+            视觉传达设计本科背景，曾从事摄影与视觉相关工作，现专注AIGC视频设计。能够围绕剧本核心，推进角色人设、服化道、场景生成、分镜脚本、视频素材生成、剪辑与配音整合，让创意最终成为可展示、可传播的完整作品。
           </p>
-          <div class="metrics" aria-label="能力概览">
+          <div class="metrics" aria-label="作品集概览">
             <div>
-              <strong>3</strong>
-              <span>设计 / 摄影 / AIGC 复合经历</span>
+              <strong>9</strong>
+              <span>完整视频成片上线展示</span>
             </div>
             <div>
-              <strong>6</strong>
-              <span>作品方向覆盖</span>
+              <strong>51</strong>
+              <span>压缩图片作品进入网页图库</span>
             </div>
             <div>
               <strong>Full</strong>
-              <span>AI 视频制作流程</span>
+              <span>AIGC视频制作链路</span>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">FULL VIDEO WORKS</p>
+          <h2 id="work-title">完整成片展示</h2>
+          <p>
+            保留最能体现叙事和制作能力的两组系列：狗狗短剧与珍珠王座。视频已按原比例等比压缩，点击任一集可完整播放。
+          </p>
+        </div>
+        <div class="series-grid" id="seriesGrid"></div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">VISUAL ARCHIVE</p>
+          <h2 id="gallery-title">作品图库</h2>
+          <p>
+            角色IP、分镜、电商详情页、Logo、标题字、漫画角色海报等作品集中展示。网页使用轻量压缩图，原始高清素材保留在本地。
+          </p>
+        </div>
+        <div class="filter-bar" aria-label="作品筛选">
+          <button class="filter-button is-active" type="button" data-filter="all">全部</button>
+          <button class="filter-button" type="button" data-filter="character">角色IP</button>
+          <button class="filter-button" type="button" data-filter="storyboard">分镜</button>
+          <button class="filter-button" type="button" data-filter="commerce">电商视觉</button>
+          <button class="filter-button" type="button" data-filter="brand">品牌Logo</button>
+          <button class="filter-button" type="button" data-filter="poster">漫画海报</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
       </section>
 
       <section class="process-section" aria-labelledby="process-title">
         <div class="process-backdrop" aria-hidden="true"></div>
         <div class="section-heading">
           <p class="eyebrow">WORKFLOW</p>
-          <h2 id="process-title">从剧本到成片的 AIGC 工作流</h2>
-          <p>把简历里的真实工作流程拆成可被招聘方快速理解的五个环节。</p>
+          <h2 id="process-title">从剧本到成片的AIGC工作流</h2>
+          <p>简历中的真实工作内容，被整理成招聘方能快速理解的五个环节。</p>
         </div>
         <div class="process-track">
           <article class="process-card" data-step="01">
             <h3>剧本理解</h3>
-            <p>与编剧沟通故事内核，确定角色关系、情绪走向与镜头重点。</p>
+            <p>与编剧沟通故事内核，确认角色关系、情绪走向与镜头重点。</p>
           </article>
           <article class="process-card" data-step="02">
             <h3>角色与场景</h3>
@@ -118,40 +144,12 @@
           </article>
           <article class="process-card" data-step="04">
             <h3>AI素材生成</h3>
-            <p>调用图片、视频与修改模型，配合提示词工程完成镜头素材。</p>
+            <p>结合提示词工程，调用图像、视频与修改模型完成镜头素材。</p>
           </article>
           <article class="process-card" data-step="05">
             <h3>剪辑交付</h3>
             <p>结合剪辑、配音和节奏整理，完成可观看的短剧或展示视频。</p>
           </article>
-        </div>
-      </section>
-
-      <section class="section work-section" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="eyebrow">SELECTED WORK</p>
-          <h2 id="work-title">精选作品</h2>
-          <p>
-            从现有作品库中挑选代表项目做轻量化展示，保留完整作品方向和求职相关能力。
-          </p>
-        </div>
-        <div class="filter-bar" aria-label="作品筛选">
-          <button class="filter-button is-active" type="button" data-filter="all">全部</button>
-          <button class="filter-button" type="button" data-filter="video">视频</button>
-          <button class="filter-button" type="button" data-filter="design">设计</button>
-          <button class="filter-button" type="button" data-filter="visual">视觉</button>
-        </div>
-        <div class="work-grid" id="workGrid"></div>
-      </section>
-
-      <section class="texture-section" aria-labelledby="texture-title">
-        <div class="texture-media" data-depth="0.025" aria-hidden="true"></div>
-        <div class="texture-copy paper-note">
-          <p class="eyebrow">VISUAL SYSTEM</p>
-          <h2 id="texture-title">温暖手绘感的高级视觉底图</h2>
-          <p>
-            页面中加入 AI 生成的平面手绘底图、纸张颗粒和柔和笔触交互，让作品展示更治愈，也更像一本可以翻阅的视觉画册。
-          </p>
         </div>
       </section>
 
@@ -162,16 +160,16 @@
         </div>
         <div class="capability-grid">
           <article>
-            <h3>AI 视频全流程</h3>
+            <h3>AI视频全流程</h3>
             <p>剧本理解、角色人设、场景搭建、分镜脚本、素材生成、剪辑与配音整合。</p>
           </article>
           <article>
             <h3>提示词与工作流</h3>
-            <p>准确调用图片生成、图片修改、视频生成和配音模型，具备 ComfyUI 使用与工作流调整经验。</p>
+            <p>图像生成、图像修改、视频生成、ComfyUI工作流调试，以及多模型协同。</p>
           </article>
           <article>
             <h3>视觉与影像基础</h3>
-            <p>视觉传达设计背景，结合摄影、构图、色彩、版式和剪辑经验提升成片完成度。</p>
+            <p>视觉传达、摄影、构图、色彩、版式和剪辑经验，服务画面完成度。</p>
           </article>
         </div>
         <div class="tool-cloud" aria-label="常用工具">
@@ -201,12 +199,12 @@
           <article>
             <time>2025.06 - 至今</time>
             <h3>景焯文化传媒有限公司 · AIGC视频设计师</h3>
-            <p>参与剧本沟通、角色与场景生成、分镜制作、AI 视频素材生成、剪辑与配音完成。</p>
+            <p>参与剧本沟通、角色与场景生成、分镜制作、AI视频素材生成、剪辑与配音完成。</p>
           </article>
           <article>
             <time>2024.04 - 2025.06</time>
             <h3>争艳摄影有限公司 · 摄影师</h3>
-            <p>负责写真摄影与婚礼摄影，并参与 AI 艺术照、AI 婚礼艺术照制作。</p>
+            <p>负责写真摄影与婚礼摄影，并参与AI艺术照、AI婚礼艺术照制作。</p>
           </article>
           <article>
             <time>2019.09 - 2023.06</time>
@@ -219,10 +217,8 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">CONTACT</p>
-          <h2 id="contact-title">期待 AIGC 视频与视觉岗位机会</h2>
-          <p>
-            如果你正在寻找能把创意推进到成片的 AIGC 视觉设计师，可以通过邮箱或电话联系。
-          </p>
+          <h2 id="contact-title">期待AIGC视觉与视频岗位机会</h2>
+          <p>如果你正在寻找能把创意推进到成片的AIGC视觉设计师，可以通过邮箱或电话联系。</p>
         </div>
         <div class="contact-actions">
           <a class="button primary" href="mailto:Lanlin@163.com">Lanlin@163.com</a>
@@ -235,6 +231,12 @@
       <span>Lanlin Portfolio</span>
       <span>AIGC Visual Designer</span>
     </footer>
+
+    <dialog class="media-modal" id="mediaModal" aria-label="作品预览">
+      <button class="modal-close" type="button" aria-label="关闭预览">×</button>
+      <div class="modal-content" id="modalContent"></div>
+      <div class="modal-caption" id="modalCaption"></div>
+    </dialog>
 
     <script src="script.js"></script>
   </body>

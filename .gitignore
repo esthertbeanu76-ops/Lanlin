@@ -6,6 +6,11 @@
 05_漫画卡片与角色海报/
 06_建筑空镜与环境素材/
 
+# Local QA/export files
+qa-*.png
+qa-dom.html
+*.zip
+
 # Local/editor noise
 .DS_Store
 Thumbs.db
